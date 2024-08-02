@@ -33,7 +33,7 @@
 }
 
 .container button {
-    color: black;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -41,15 +41,30 @@
     background-color: #121619;
     height: 50px;
     width: 180px;
-    color: white;
     text-decoration: none;
     font-size: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    transform: 0.5s;
+    transition: 0.7s;
+    box-shadow: none;
+    animation: pulse 2s infinite;
 }
 
-.orderBtn:hover {
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container button:hover {
     color: black;
     background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    animation: none;
 }

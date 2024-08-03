@@ -1,5 +1,6 @@
 import React from 'react'
 
+//receive properties from Menu.jsx
 const Items = ({image, name, price}) => {
   return (
     <div className='menuItem'>

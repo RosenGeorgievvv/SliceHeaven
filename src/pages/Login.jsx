@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import {auth} from '../data/auth';
 import '../styles/Login.css';
-import { redirect, Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -15,7 +17,7 @@ const Login = () => {
     try{
         await signInWithEmailAndPassword(auth, email, password);
         console.log('User signed in successfully');
-        redirect('/')
+        navigate('/')
     }catch(error){
         setError('Failed to sign in. Please check your email and password.');
     }

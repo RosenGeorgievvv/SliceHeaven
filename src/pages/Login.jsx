@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import {auth} from '../data/auth';
 import '../styles/Login.css';
-import { redirect } from 'react-router-dom';
+import { redirect, Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -47,6 +47,7 @@ const Login = () => {
           />
         </div>
         <button type="submit" className="login-button">Login</button>
+        <p>You do not have an account? <Link to="/register">Register</Link></p>
       </form>
     </div>
   );

@@ -23,7 +23,6 @@ const Navigation = () => {
           <Link to="/" onClick={closeNavbar}>Home</Link>
           <Link to="/menu" onClick={closeNavbar}>Menu</Link>
           <Link to="/about" onClick={closeNavbar}>About</Link>
-          <Link to="/contact" onClick={closeNavbar}>Contact</Link>
           <Link to="/login" onClick={closeNavbar}>Login</Link>
           <Link to="/register" onClick={closeNavbar}>Register</Link>
         </div>

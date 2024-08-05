@@ -67,6 +67,7 @@
     }
     .navbar-logo{
         margin-right: 10px;
+        height: 40px;
     }
   
     .navbar-links.active {

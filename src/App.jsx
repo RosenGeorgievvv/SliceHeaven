@@ -6,25 +6,27 @@ import Menu from './pages/Menu';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Login from './pages/Login';
-import Register from './pages/Register'
+import Register from './pages/Register';
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
-
   return (
     <div className='app'>
-      <Router>
-        <Navigation />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/menu' element={<Menu />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Navigation />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/menu' element={<Menu />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </AuthProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

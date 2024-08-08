@@ -14,7 +14,7 @@ const Navigation = () => {
   };
 
   const closeNavbar = () => {
-    setVisible(false);
+    setVisible(false); 
   };
 
   const handleLogout = () => {

@@ -1,8 +1,4 @@
-# React + Vite
+Welcome to SliceHeaven, the premier online destination for all your pizza cravings! Whether you're a cheese lover, a pepperoni enthusiast, or a fan of gourmet toppings, SliceHeaven has something for everyone. Our user-friendly platform ensures a seamless experience from registration to your final bite of delicious pizza.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://slice-heaven.vercel.app/

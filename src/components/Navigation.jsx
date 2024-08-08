@@ -12,7 +12,6 @@ const Navigation = () => {
   const toggleNavigation = () => {
     setVisible(!visible);
   };
-
   const closeNavbar = () => {
     setVisible(false); 
   };

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/Items.css';
 
 //receive properties from Menu.jsx
 const Items = ({image, name, price, onAddToBasket }) => {
